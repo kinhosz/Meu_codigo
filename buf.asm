@@ -66,6 +66,9 @@ leitor:
 	mov ah,00h
 	int 16h
 	
+	call putchar
+	cmp al,48
+	je end
 
 	fim:
 	ret
